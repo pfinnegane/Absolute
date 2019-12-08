@@ -1,0 +1,76 @@
+* {
+    font-family: sans-serif;
+  }
+  .alert{
+    height: 60px;
+    width: 300px;
+    background-color: #E85446;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .alert .title{
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  input, button, select, option {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 30px;
+    background-color: white;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  input:focus{
+    transition: step-end .3s;
+    border-bottom:solid blue;
+  }
+  input[type=text], input[type=email], input[type=number]{
+    border-width: 0px 0px 1px 0px;
+  }
+  input[type=email]:after{
+    content: attr(data-content);
+  }
+  fieldset{
+    text-align: left;
+    display: grid;
+  }
+  input[type=radio], input[type=checkbox]{
+    border: 2px solid black;
+    height: 1em;
+    
+  }
+  input[type=radio]:after, input[type=checkbox]:after{
+    position: relative;
+    content: attr(data-content);
+    margin-left: 2em;
+  }
+  input::placeholder{
+    text-align: center;
+  }
+  input:hover, button:hover, select:hover, input:focus{
+    outline: none;
+  }
+  html{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    background-color: lightpink;
+    box-sizing: border-box;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 80vw;
+    background-color: white;
+  }
+
+  fieldset{
+    border: none;
+    margin: 5px;
+  }
